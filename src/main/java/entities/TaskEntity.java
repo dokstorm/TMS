@@ -11,6 +11,8 @@ public class TaskEntity implements Serializable {
     @GeneratedValue
     private Integer id;
 
+    //project_id
+
     @Column(name = "task_name", length = 70, nullable = false)
     private String name;
 
