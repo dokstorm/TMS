@@ -11,10 +11,12 @@ public class BugEntity implements Serializable {
     @GeneratedValue
     private Integer id;
 
+    //project_id
+
     @Column(name = "bug_name", nullable = false, length = 70)
     private String name;
 
-    @Column(name = "bug_priority", length = 20)
+    @Column(name = "bug_priority", length = 20, nullable = false)
     private String priority;
 
     @Column(name = "bug_status", length = 20)
